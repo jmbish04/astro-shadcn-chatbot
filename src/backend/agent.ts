@@ -8,7 +8,7 @@ export class OrchestratorAgent extends AIChatAgent {
     // 1. Initialize Workers AI Provider with local system bindings
     const workersai = createWorkersAI({
       binding: this.env.AI,
-      gateway: { id: 'colby-gateway' }
+      gateway: { id: 'default-gateway' }
     });
 
     // 2. Execute multi-step stream with AI Gateway parameters
